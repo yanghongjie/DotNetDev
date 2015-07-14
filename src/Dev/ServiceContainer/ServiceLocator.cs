@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Dev.Properties;
 
 namespace Dev.ServiceContainer
@@ -10,12 +11,13 @@ namespace Dev.ServiceContainer
     /// </summary>
     public static class ServiceLocator
     {
+        #region ServiceLocator
         private static ServiceLocatorProvider currentProvider;
 
         /// <summary>
         /// The current ambient container.
         /// </summary>
-        public static IServiceLocator Current
+        private static IServiceLocator Current
         {
             get
             {
@@ -35,12 +37,45 @@ namespace Dev.ServiceContainer
             currentProvider = newProvider;
         }
 
-        public static bool IsLocationProviderSet
+        private static bool IsLocationProviderSet
         {
             get
             {
                 return currentProvider != null;
             }
+        } 
+        #endregion
+
+        #region Method
+        public static object Get(Type type)
+        {
+            return Current.GetInstance(type);
         }
+
+        public static object Get(Type type, string key)
+        {
+            return Current.GetInstance(type, key);
+        }
+
+        public static object Get<T>()
+        {
+            return Current.GetInstance<T>();
+        }
+
+        public static object Get<T>(string key)
+        {
+            return Current.GetInstance<T>(key);
+        }
+
+        public static IEnumerable<object> GetAll(Type type)
+        {
+            return Current.GetAllInstances(type);
+        }
+
+        public static IEnumerable<T> GetAll<T>()
+        {
+            return Current.GetAllInstances<T>();
+        } 
+        #endregion
     }
 }
