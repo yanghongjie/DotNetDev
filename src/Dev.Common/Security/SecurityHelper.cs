@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using System.Text;
 using Dev.Common.Extensions;
 using Dev.Common.Properties;
@@ -70,6 +71,32 @@ namespace Dev.Common.Security
             //RSA加密DES密钥
             string enDesKey = Convert.ToBase64String(RsaHelper.Encrypt(des.Key, publicKey));
             return new[] { enDesKey, data }.ExpandAndToString(Separator);
+        }
+
+        /// <summary>
+        /// 校验单向加密
+        /// </summary>
+        /// <param name="data">未加密前</param>
+        /// <param name="salt">加密盐</param>
+        /// <param name="encryptedData">加密后</param>
+        /// <returns>校验结果</returns>
+        public static bool Check(string data, string salt, string encryptedData)
+        {
+            return String.CompareOrdinal(Encrypting(data, salt), encryptedData.ToUpper()) == 0;
+        }
+
+        /// <summary>
+        /// 单向加密
+        /// </summary>
+        /// <param name="payload">需加密字符串</param>
+        /// <param name="salt">加密盐</param>
+        /// <returns>加密后的字符串</returns>
+        public static string Encrypting(string payload, string salt)
+        {
+            HashAlgorithm mySha256 = SHA256.Create();
+            byte[] value = Encoding.UTF8.GetBytes(String.Format("--{0}--{1}--", salt, payload));
+            byte[] hashValue = mySha256.ComputeHash(value);
+            return BitConverter.ToString(hashValue).Replace("-", "").ToUpper();
         }
     }
 }
