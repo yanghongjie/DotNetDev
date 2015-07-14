@@ -1,7 +1,9 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using Dev.Data.Initializer;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Test.Common;
 using Test.Common.Database;
 using Test.Common.Database.Init;
 using Test.Common.Entites;
@@ -9,11 +11,12 @@ using Test.Common.Entites;
 namespace Test.Dev.Data.Tests
 {
     [TestClass]
-    public class DatabaseInitializerTest
+    public class DatabaseInitializerTest : TestDb
     {
         [TestMethod]
         public void InitDatabaseTest()
         {
+            var dir = AppDomain.CurrentDomain.GetData("DataDirectory");
             var initializer = new DropCreateDatabaseAlwaysWithSeed<DevTestContext>();
             DatabaseInitializer.Initialize(initializer);
             using (var context = new DevTestContext())

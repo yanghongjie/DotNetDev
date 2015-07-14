@@ -1,13 +1,14 @@
 ﻿using System.Threading.Tasks;
 using Dev.Common.Develop;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Test.Common;
 using Test.Common.Database;
 using Test.Common.Entites;
 
 namespace Test.Dev.Data.Tests
 {
     [TestClass]
-    public class RetryPolicyTest
+    public class RetryPolicyTest : TestDb
     {
         [TestMethod]
         public void RemoveWithRetryTest()
