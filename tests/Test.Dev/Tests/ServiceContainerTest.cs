@@ -20,13 +20,13 @@ namespace Test.Dev.Tests
         [TestMethod]
         public void GetInstance()
         {
-            var instance = ServiceLocator.Current.GetInstance(typeof(ILogger));
+            var instance = ServiceLocator.Get(typeof(ILogger));
             Assert.IsInstanceOfType(instance, typeof(ILogger));
         }
         [TestMethod]
         public void GetAllInstance()
         {
-            var instances = ServiceLocator.Current.GetAllInstances(typeof(ILogger));
+            var instances = ServiceLocator.GetAll(typeof(ILogger));
             Assert.IsTrue(instances.Count() == 1);
         }
     }
