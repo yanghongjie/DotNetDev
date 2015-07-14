@@ -1,2 +1,5 @@
 language: csharp
 solution: Dev.sln
+mono:
+  - latest
+  - 3.12.0
