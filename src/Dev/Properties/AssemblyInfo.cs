@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 与程序集关联的信息。
 
 [assembly: AssemblyTitle("Dev")]
-[assembly: AssemblyDescription("DotNet 开发组件")]
+[assembly: AssemblyDescription("C# 常用类库及拓展方法")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("逗豆豆")]
 [assembly: AssemblyProduct("Dev")]
-[assembly: AssemblyCopyright("Copyright © 逗豆豆 2015")]
+[assembly: AssemblyCopyright("逗豆豆")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
