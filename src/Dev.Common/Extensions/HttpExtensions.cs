@@ -9,12 +9,12 @@ namespace Dev.Common.Extensions
     {
         private const string HttpContextBaseKey = "MS_HttpContext";
 
-        public static HttpContext GetHttpContext(this HttpRequestMessage request)
+        public static HttpContext ToHttpContext(this HttpRequestMessage request)
         {
-            return HttpUtils.ToHttpContext(request.GetHttpContextBase());
+            return HttpUtils.ToHttpContext(request.ToHttpContextBase());
         }
 
-        public static HttpContextBase GetHttpContextBase(this HttpRequestMessage request)
+        private static HttpContextBase ToHttpContextBase(this HttpRequestMessage request)
         {
             if (request == null)
             {

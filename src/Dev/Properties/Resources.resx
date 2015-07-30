@@ -125,6 +125,69 @@
     <value>尝试获取类型的实例时发生激活错误{0}，键“{1}”</value>
     <comment>GetInstance方法异常显示消息</comment>
   </data>
+  <data name="Filter_GroupOperateError" xml:space="preserve">
+    <value>查询条件组中的操作类型错误，只能为And或者Or。</value>
+  </data>
+  <data name="Filter_RuleFieldInTypeNotFound" xml:space="preserve">
+    <value>指定的属性“{0}”在类型“{1}”中不存在。</value>
+  </data>
+  <data name="FriendlyMessage" xml:space="preserve">
+    <value>请稍后再试。</value>
+  </data>
+  <data name="Logging_CreateLogInstanceReturnNull" xml:space="preserve">
+    <value>创建名称为“{0}”的日志实例时“{1}”返回空实例。</value>
+  </data>
+  <data name="Mef_HttpContextItems_NotFoundRequestContainer" xml:space="preserve">
+    <value>当前Http上下文中不存在Request有效范围的Mef部件容器。</value>
+  </data>
+  <data name="ObjectExtensions_PropertyNameNotExistsInType" xml:space="preserve">
+    <value>指定对象中不存在名称为“{0}”的属性。</value>
+  </data>
+  <data name="ObjectExtensions_PropertyNameNotFixedType" xml:space="preserve">
+    <value>指定名称“{0}”的属性类型不是“{1}”。</value>
+  </data>
+  <data name="ParameterCheck_Between" xml:space="preserve">
+    <value>参数“{0}”的值必须在“{1}”与“{2}”之间。</value>
+  </data>
+  <data name="ParameterCheck_BetweenNotEqual" xml:space="preserve">
+    <value>参数“{0}”的值必须在“{1}”与“{2}”之间，且不能等于“{3}”。</value>
+  </data>
+  <data name="ParameterCheck_DirectoryNotExists" xml:space="preserve">
+    <value>指定的目录路径“{0}”不存在。</value>
+  </data>
+  <data name="ParameterCheck_FileNotExists" xml:space="preserve">
+    <value>指定的文件路径“{0}”不存在。</value>
+  </data>
+  <data name="ParameterCheck_NotEmpty_Guid" xml:space="preserve">
+    <value>参数“{0}”的值不能为Guid.Empty</value>
+  </data>
+  <data name="ParameterCheck_NotGreaterThan" xml:space="preserve">
+    <value>参数“{0}”的值必须大于“{1}”。</value>
+  </data>
+  <data name="ParameterCheck_NotGreaterThanOrEqual" xml:space="preserve">
+    <value>参数“{0}”的值必须大于或等于“{1}”。</value>
+  </data>
+  <data name="ParameterCheck_NotLessThan" xml:space="preserve">
+    <value>参数“{0}”的值必须小于“{1}”。</value>
+  </data>
+  <data name="ParameterCheck_NotLessThanOrEqual" xml:space="preserve">
+    <value>参数“{0}”的值必须小于或等于“{1}”。</value>
+  </data>
+  <data name="ParameterCheck_NotNull" xml:space="preserve">
+    <value>参数“{0}”不能为空引用。</value>
+  </data>
+  <data name="ParameterCheck_NotNullOrEmpty_Collection" xml:space="preserve">
+    <value>参数“{0}”不能为空引用或空集合。</value>
+  </data>
+  <data name="ParameterCheck_NotNullOrEmpty_String" xml:space="preserve">
+    <value>参数“{0}”不能为空引用或空字符串。</value>
+  </data>
+  <data name="Security_DES_KeyLenght" xml:space="preserve">
+    <value>参数key的长度必须为8或24，当前为{0}。</value>
+  </data>
+  <data name="Security_RSA_Sign_HashType" xml:space="preserve">
+    <value>参数hashType必须为MD5或SHA1</value>
+  </data>
   <data name="ServiceLocationProviderNotSetMessage" xml:space="preserve">
     <value>ServiceLocationProvider必须设置。</value>
     <comment>调用ServiceLocator.Current前，必须先设置ServiceLocationProvider</comment>

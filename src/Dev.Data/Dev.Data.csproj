@@ -68,16 +68,15 @@
     <Compile Include="TransientErrorDetectionStrategy\TransientErrorIgnoreStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dev.Common\Dev.Common.csproj">
-      <Project>{a32ab6b0-f1b3-487f-84ab-7a4933657592}</Project>
-      <Name>Dev.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dev\Dev.csproj">
+      <Project>{C7E39DB5-9E03-4692-B25E-4B416A927ADD}</Project>
+      <Name>Dev</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

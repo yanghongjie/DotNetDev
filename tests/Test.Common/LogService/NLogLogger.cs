@@ -1,7 +1,7 @@
 ﻿using System;
-using Dev.Common.Logging;
+using Dev.Logging;
 using Logger = NLog.Logger;
-using LogLevel = Dev.Common.Logging.LogLevel;
+using LogLevel = Dev.Logging.LogLevel;
 
 namespace Test.Common.LogService
 {
@@ -16,42 +16,42 @@ namespace Test.Common.LogService
 
         #region Overrides of LogBase
         /// <summary>
-        /// 获取 是否允许<see cref="LogLevel.Trace"/>级别的日志
+        /// 获取 是否允许<see cref="System.LogLevel.Trace"/>级别的日志
         /// </summary>
         public override bool IsTraceEnabled
         {
             get { return _logger.IsTraceEnabled; }
         }
         /// <summary>
-        /// 获取 是否允许<see cref="LogLevel.Debug"/>级别的日志
+        /// 获取 是否允许<see cref="System.LogLevel.Debug"/>级别的日志
         /// </summary>
         public override bool IsDebugEnabled
         {
             get { return _logger.IsDebugEnabled; }
         }
         /// <summary>
-        /// 获取 是否允许<see cref="LogLevel.Info"/>级别的日志
+        /// 获取 是否允许<see cref="System.LogLevel.Info"/>级别的日志
         /// </summary>
         public override bool IsInfoEnabled
         {
             get { return _logger.IsInfoEnabled; }
         }
         /// <summary>
-        /// 获取 是否允许<see cref="LogLevel.Warn"/>级别的日志
+        /// 获取 是否允许<see cref="System.LogLevel.Warn"/>级别的日志
         /// </summary>
         public override bool IsWarnEnabled
         {
             get { return _logger.IsWarnEnabled; }
         }
         /// <summary>
-        /// 获取 是否允许<see cref="LogLevel.Error"/>级别的日志
+        /// 获取 是否允许<see cref="System.LogLevel.Error"/>级别的日志
         /// </summary>
         public override bool IsErrorEnabled
         {
             get { return _logger.IsErrorEnabled; }
         }
         /// <summary>
-        /// 获取 是否允许<see cref="LogLevel.Fatal"/>级别的日志
+        /// 获取 是否允许<see cref="System.LogLevel.Fatal"/>级别的日志
         /// </summary>
         public override bool IsFatalEnabled
         {

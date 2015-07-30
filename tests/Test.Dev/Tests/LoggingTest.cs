@@ -1,4 +1,4 @@
-﻿using Dev.Common.Logging;
+﻿using Dev.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Test.Common.LogService;
 

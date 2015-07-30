@@ -99,10 +99,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dev.Common\Dev.Common.csproj">
-      <Project>{A32AB6B0-F1B3-487F-84AB-7A4933657592}</Project>
-      <Name>Dev.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\src\Dev.Data\Dev.Data.csproj">
       <Project>{44543451-fdcc-4c38-b0e5-be041543bea3}</Project>
       <Name>Dev.Data</Name>

@@ -67,13 +67,13 @@
     <Compile Include="Tests\RetryPolicyTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dev.Common\Dev.Common.csproj">
-      <Project>{A32AB6B0-F1B3-487F-84AB-7A4933657592}</Project>
-      <Name>Dev.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\src\Dev.Data\Dev.Data.csproj">
       <Project>{44543451-FDCC-4C38-B0E5-BE041543BEA3}</Project>
       <Name>Dev.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Dev\Dev.csproj">
+      <Project>{C7E39DB5-9E03-4692-B25E-4B416A927ADD}</Project>
+      <Name>Dev</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test.Common\Test.Common.csproj">
       <Project>{097792C3-DC17-48BE-B261-F0E303F65389}</Project>

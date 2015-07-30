@@ -4,10 +4,10 @@ using System.Collections.Generic;
 namespace Dev.ServiceContainer
 {
     /// <summary>
-    /// The generic Service Locator interface. This interface is used
-    /// to retrieve services (instances identified by type and optional
-    /// name) from a container.
-    /// project address：http://commonservicelocator.codeplex.com/
+    ///     The generic Service Locator interface. This interface is used
+    ///     to retrieve services (instances identified by type and optional
+    ///     name) from a container.
+    ///     project address：http://commonservicelocator.codeplex.com/
     /// </summary>
     public interface IServiceLocator : IServiceProvider
     {

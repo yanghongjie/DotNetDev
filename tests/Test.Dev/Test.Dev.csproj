@@ -80,10 +80,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dev.Common\Dev.Common.csproj">
-      <Project>{A32AB6B0-F1B3-487F-84AB-7A4933657592}</Project>
-      <Name>Dev.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\src\Dev\Dev.csproj">
       <Project>{C7E39DB5-9E03-4692-B25E-4B416A927ADD}</Project>
       <Name>Dev</Name>

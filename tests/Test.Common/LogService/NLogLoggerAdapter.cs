@@ -1,4 +1,4 @@
-﻿using Dev.Common.Logging;
+﻿using Dev.Logging;
 using NLog.Config;
 using NLog.Targets;
 using LogManager = NLog.LogManager;

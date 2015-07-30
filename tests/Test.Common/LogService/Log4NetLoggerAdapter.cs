@@ -1,4 +1,4 @@
-﻿using Dev.Common.Logging;
+﻿using Dev.Logging;
 using log4net.Appender;
 using log4net.Config;
 using log4net.Core;

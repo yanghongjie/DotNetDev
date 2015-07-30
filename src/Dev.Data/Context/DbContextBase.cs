@@ -5,8 +5,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-using Dev.Common.Extensions;
 using Dev.Data.TransientErrorDetectionStrategy;
+using Dev.Extensions;
 using Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling;
 
 namespace Dev.Data.Context

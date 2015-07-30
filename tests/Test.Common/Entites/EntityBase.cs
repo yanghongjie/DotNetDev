@@ -1,5 +1,5 @@
 ﻿using System;
-using Dev.Common.Model;
+using Dev.Model;
 
 namespace Test.Common.Entites
 {
