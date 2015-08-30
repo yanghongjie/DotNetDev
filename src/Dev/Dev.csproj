@@ -51,9 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAnnotations\MinAttribute.cs" />
     <Compile Include="DataAnnotations\PasswordAttribute.cs" />
     <Compile Include="Data\GuidHelper.cs" />
     <Compile Include="Data\JsonHelper.cs" />
+    <Compile Include="Data\ObjectCloneHelper.cs" />
     <Compile Include="Data\SerializeHelper.cs" />
     <Compile Include="Develop\CodeRamer.cs" />
     <Compile Include="Develop\CodeTimer.cs" />
@@ -119,9 +121,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="ServiceContainer\Readme.txt" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
